@@ -1,0 +1,9 @@
+.page404 {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+
+  &__inner {
+    padding: 20rem 14rem;
+  }
+}

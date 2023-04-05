@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  padding: 15rem;
+  background: #343434;
+  justify-content: end;
+
+  &__path {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

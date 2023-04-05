@@ -1,0 +1,41 @@
+.container {
+  cursor: pointer;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.tooltip {
+  position: absolute;
+  top: 370rem;
+  left: 750rem;
+  width: 450rem;
+  height: fit-content;
+  padding: 10rem 15rem;
+  color: $text-color;
+  @extend %calibri-about;
+  background: $highlights-color;
+  border-radius: 10rem;
+
+  @media (max-width: 480px) {
+    top: 115vh;
+    left: 0;
+    margin: 15rem;
+    width: fit-content;
+  }
+}
+
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateX(-2rem);
+  }
+  50% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(-2rem);
+  }
+}
