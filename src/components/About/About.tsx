@@ -7,27 +7,27 @@ import { soft } from "../data/soft.";
 
 export const About = () => {
   return (
-    <div className="aboutMe">
-      <div className="profile">
+    <article className="aboutMe">
+      <section className="profile">
         <img src={profile} alt="" />
-        <div className="profile__description">
-          <div className="profile__description-surname">Куксова</div>
-          <div className="profile__description-name">Полина</div>
-          <div className="profile__description-speciality">
+        <section className="profile__description">
+          <h2 className="profile__description-surname">Куксова</h2>
+          <h1 className="profile__description-name">Полина</h1>
+          <h3 className="profile__description-speciality">
             Junior Frontend-разработчик
-          </div>
-        </div>
-      </div>
-      <div className="contact">
+          </h3>
+        </section>
+      </section>
+      <section className="contact">
         {contact.map((i) => (
           <a className="link" href={i.path} key={i.path}>
-            <div className="contact__item">
+            <section className="contact__item">
               <img src={i.img} alt="" />
-              <div>{i.contact}</div>
-            </div>
+              <p>{i.contact}</p>
+            </section>
           </a>
         ))}
-        <div className="contact__item">
+        <section className="contact__item">
           <img src={location} alt="location" />
           <div
             style={{
@@ -41,23 +41,23 @@ export const About = () => {
               (не готова к переезду)
             </p>
           </div>
-        </div>
-      </div>
-      <div className="edition">
+        </section>
+      </section>
+      <nav className="edition">
         Языки
         <ul>
           <li>Русский: носитель</li>
           <li>English: B1-B2</li>
         </ul>
-      </div>
-      <div className="edition">
+      </nav>
+      <nav className="edition">
         Soft-skills
         <ul>
           {soft.map((i) => (
             <li key={i.id}>{i.description}</li>
           ))}
         </ul>
-      </div>
-    </div>
+      </nav>
+    </article>
   );
 };

@@ -1,8 +1,8 @@
 .link {
+  padding: 0.625px 0.9375px;
   color: $text-color;
   text-decoration: none;
   cursor: pointer;
-  padding: 0.625px 0.9375px;
 
   &:hover {
     color: $selection-color;
@@ -21,18 +21,19 @@
 }
 
 .link-btn {
-  margin-top: 5rem;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding: 10rem;
   justify-content: center;
   align-content: center;
-  color: $highlights-color;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 10rem;
-  font-size: 20rem;
   border: 1rem solid $highlights-color;
   border-radius: 10rem;
+  color: $highlights-color;
+  font-size: 20rem;
+  text-decoration: none;
+  cursor: pointer;
+
   &:hover {
     color: $selection-color;
   }

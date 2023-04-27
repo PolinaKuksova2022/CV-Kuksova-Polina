@@ -10,28 +10,29 @@
 }
 
 .profile {
-  width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: fit-content;
   font-family: Montserrat;
 
   img {
     width: 110rem;
     height: 110rem;
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
     object-position: center;
   }
 
   &__description {
     display: flex;
     flex-direction: column;
+
     &-surname {
       font-weight: 400;
-      color: $second-color;
       font-size: 35rem;
+      color: $second-color;
     }
 
     &-name {
@@ -41,8 +42,9 @@
 
     &-speciality {
       font-weight: 700;
-      color: $second-color;
       font-size: 20rem;
+      color: $second-color;
+
       @media (max-width: 480px) {
         font-size: 18rem;
       }
@@ -51,19 +53,19 @@
 }
 
 .contact {
-  width: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 6rem;
+  margin: 0 auto;
+  width: 100%;
   @extend %calibri-about;
 
   &__item {
-    height: 38rem;
-    padding: 7rem 20rem 7rem 30rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 7rem 20rem 7rem 30rem;
+    height: 38rem;
     font-size: 20rem;
     @extend %about_back;
 
@@ -73,17 +75,17 @@
   }
 
   img {
+    margin-right: 40rem;
     height: 100%;
     object-fit: contain;
-    margin-right: 40rem;
     scale: (1.5);
   }
 }
 
 .edition {
-  width: 100%;
   margin: 0 auto;
   padding: 7rem 30rem 7rem 30rem;
+  width: 100%;
   @extend %calibri-about;
   @extend %about_back;
   font-size: 20rem;

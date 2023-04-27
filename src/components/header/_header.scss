@@ -1,8 +1,8 @@
 .header {
   display: flex;
+  justify-content: end;
   padding: 15rem;
   background: #343434;
-  justify-content: end;
 
   &__path {
     display: flex;

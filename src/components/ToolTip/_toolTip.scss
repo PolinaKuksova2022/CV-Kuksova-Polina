@@ -6,20 +6,20 @@
 
 .tooltip {
   position: absolute;
+  padding: 10rem 15rem;
   top: 370rem;
   left: 750rem;
   width: 450rem;
   height: fit-content;
-  padding: 10rem 15rem;
+  border-radius: 10rem;
   color: $text-color;
   @extend %calibri-about;
   background: $highlights-color;
-  border-radius: 10rem;
 
   @media (max-width: 480px) {
+    margin: 15rem;
     top: 115vh;
     left: 0;
-    margin: 15rem;
     width: fit-content;
   }
 }

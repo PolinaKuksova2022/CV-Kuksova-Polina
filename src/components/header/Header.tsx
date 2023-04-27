@@ -7,7 +7,7 @@ export const Header = () => {
   const location = useLocation();
   return (
     <header className="header">
-      <div className="header__path">
+      <nav className="header__path">
         {path.map(
           (el) =>
             !el.hidden && (
@@ -22,7 +22,7 @@ export const Header = () => {
               </Link>
             )
         )}
-      </div>
+      </nav>
     </header>
   );
 };

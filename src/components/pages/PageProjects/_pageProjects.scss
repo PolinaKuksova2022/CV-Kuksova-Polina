@@ -16,18 +16,18 @@
 
 .project {
   display: grid;
-  gap: 6rem;
   margin: 0 30rem;
   padding: 10rem 18rem;
+  gap: 6rem;
   grid-template-columns: 40% 25% 35%;
-  height: fit-content;
-  align-items: center;
   grid-template-areas:
     "title title img img"
     "stack . img img"
     "desc desc img img "
     "desc desc img img "
     "path repo img img ";
+  align-items: center;
+  height: fit-content;
   @extend %about_back;
 
   @media (max-width: 480px) {
@@ -41,19 +41,19 @@
   }
 
   &__title {
+    position: relative;
     grid-area: title;
     font-size: 22rem;
     font-weight: bold;
     text-align: center;
-    position: relative;
 
     &::after {
       position: absolute;
       content: "";
-      width: 80%;
-      height: 1rem;
       bottom: -5rem;
       left: 10%;
+      width: 80%;
+      height: 1rem;
       background: $highlights-color;
     }
   }
@@ -114,12 +114,12 @@
 }
 
 .btn {
-  width: 150rem;
   padding: 5rem 0;
+  width: 150rem;
   font-size: 18rem;
   color: $text-color;
   outline: none;
-  background: rgba(196, 196, 196, 0.35);
   border-radius: 10rem;
+  background: rgba(196, 196, 196, 0.35);
   cursor: pointer;
 }
