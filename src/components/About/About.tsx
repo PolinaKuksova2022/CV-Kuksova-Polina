@@ -51,7 +51,7 @@ export const About = () => {
         </ul>
       </nav>
       <nav className="edition">
-        Soft-skills
+        Soft skills
         <ul>
           {soft.map((i) => (
             <li key={i.id}>{i.description}</li>
