@@ -1,100 +1,265 @@
 .aboutMe {
-  display: grid;
-  grid-row-gap: 15rem;
-  justify-content: center;
+  margin-bottom: 70rem;
   width: 100%;
   height: fit-content;
-  border-radius: 10rem;
-  padding: 10rem 18rem;
-  background: rgba(196, 196, 196, 0.3);
 }
 
 .profile {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: fit-content;
-  font-family: Montserrat;
+  position: relative;
+  margin: 40rem 0;
 
-  img {
-    width: 110rem;
-    height: 110rem;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+  &__img {
+    position: relative;
+    margin-top: 20rem;
+    img {
+      width: 300rem;
+      height: 300rem;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 310rem;
+      height: 310rem;
+      border-radius: 50%;
+    }
+
+    &::after {
+      top: 10rem;
+      left: 1rem;
+      z-index: -2;
+      background-color: $highlights-color;
+    }
+
+    &::before {
+      top: -10rem;
+      right: 5rem;
+      z-index: -1;
+      background-color: $text-color;
+      filter: brightness(0.9);
+    }
   }
 
   &__description {
     display: flex;
     flex-direction: column;
-
-    &-surname {
-      font-weight: 400;
-      font-size: 35rem;
-      color: $second-color;
-    }
+    align-items: center;
+    margin-top: 50rem;
 
     &-name {
       font-weight: 500;
       font-size: 40rem;
+      span {
+        color: $highlights-color;
+      }
     }
 
     &-speciality {
-      font-weight: 700;
-      font-size: 20rem;
-      color: $second-color;
+      margin-top: 10rem;
+      width: 100%;
+      animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-weight: 600;
+      font-size: 60rem;
+      color: $text-color;
+    }
+  }
 
-      @media (max-width: 480px) {
-        font-size: 18rem;
+  &__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @extend %about;
+
+    a {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+      animation-duration: 45s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        transition: all 0.5s;
+      }
+      &:hover::after {
+        top: -9rem;
+        left: -9rem;
+        width: 100rem;
+        height: 100rem;
+        border-radius: 50%;
+        background: rgba($highlights-color, 0.5);
+      }
+    }
+
+    > :nth-child(odd) {
+      animation-name: bounce-2;
+    }
+
+    > :nth-child(even) {
+      animation-name: bounce-3;
+    }
+
+    > :nth-child(3) {
+      justify-self: end;
+    }
+
+    > :last-child {
+      justify-self: end;
+      animation-name: bounce-3;
+    }
+
+    *img {
+      width: 80rem;
+      object-fit: contain;
+    }
+  }
+}
+
+.edition {
+  margin: 0;
+  width: 100%;
+  @extend %about;
+
+  > ul {
+    margin-left: 18rem;
+    padding: 0;
+    text-align: justify;
+  }
+
+  * li {
+    position: relative;
+    margin-bottom: 8rem;
+    font-size: 24rem;
+    list-style-type: none;
+
+    &::after,
+    &::before {
+      position: absolute;
+      font-size: 26rem;
+      font-weight: bold;
+      color: $highlights-color;
+    }
+
+    &::before {
+      content: "<";
+      margin-left: -18rem;
+    }
+
+    &::after {
+      content: "/>";
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    margin-top: 100rem;
+
+    &__img {
+      &::after,
+      &::before,
+      img {
+        width: 160rem;
+        height: 160rem;
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50rem;
+
+      &-name {
+        font-weight: 500;
+        font-size: 30rem;
+      }
+
+      &-speciality {
+        font-weight: 600;
+        font-size: 35rem;
+      }
+    }
+
+    &__contact {
+      position: relative;
+      align-self: center;
+      margin: 20rem 0;
+      width: 80%;
+
+      a {
+        animation-duration: 0s;
+      }
+    }
+  }
+
+  .edition {
+    *li {
+      font-size: 18rem;
+      &::after,
+      &::before {
+        position: absolute;
+        font-size: 20rem;
+        font-weight: bold;
+        color: $highlights-color;
       }
     }
   }
 }
 
-.contact {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 6rem;
-  margin: 0 auto;
-  width: 100%;
-  @extend %calibri-about;
-
-  &__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 7rem 20rem 7rem 30rem;
-    height: 38rem;
-    font-size: 20rem;
-    @extend %about_back;
-
-    @media (max-width: 480px) {
-      font-size: 18rem;
-    }
-  }
-
-  img {
-    margin-right: 40rem;
-    height: 100%;
-    object-fit: contain;
-    scale: (1.5);
+@keyframes typing {
+  from {
+    width: 0;
   }
 }
 
-.edition {
-  margin: 0 auto;
-  padding: 7rem 30rem 7rem 30rem;
-  width: 100%;
-  @extend %calibri-about;
-  @extend %about_back;
-  font-size: 20rem;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
-// .hobby{
-//   width: 400rem;
-//   margin: 0 auto;
-//   padding: 7rem 30rem 7rem 30rem;
-//   @extend %calibri-style;
-//   @extend %about_back;
-// }
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(360%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-3 {
+  0% {
+    transform: translateY(360%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(360%);
+  }
+}

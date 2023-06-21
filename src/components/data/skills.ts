@@ -68,7 +68,7 @@ export const skills: TSkills[] = [
   {
     description:
       "На основе дизайн-макетов Figma создаю адаптивную, отзывчивую HTML/Scss вёрстку. Для просмотра макета данного cv кликните по названию Figma",
-    img: "./figma.svg",
+    img: "./static/figma.svg",
     name: "Figma",
     a: "https://www.figma.com/file/MXeh5iVtFWjivkrEm3u3Rv/CV%2FResume-(Community)?node-id=0-1&t=xBrThEWgSxqDOUJ7-0",
   },

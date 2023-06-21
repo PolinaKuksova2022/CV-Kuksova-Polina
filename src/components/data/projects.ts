@@ -11,7 +11,7 @@ export const projects: TProject[] = [
   {
     path: "https://calculator-constructorpk.netlify.app/",
     repo: "https://github.com/PolinaKuksova2022/Calculator-Constructor/tree/develop",
-    img: "./calculator.JPG",
+    img: "../../../static/calculator.JPG",
     title: "Drag-and-drop конструктор калькулятора",
     description:
       "У calculator-constructor два режима работы runtime и constructor. В режиме runtime можно перемещать элементы из панели на холст. В режиме constructor калькулятор производит вычисления.",
