@@ -1,0 +1,20 @@
+.about {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  
+  @media (max-width: 480px) {
+    padding-top: 60rem;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20rem;
+    padding: 5rem 14rem;
+
+    @media (max-width: 480px) {
+      grid-template-columns: 100%;
+    }
+  }
+}

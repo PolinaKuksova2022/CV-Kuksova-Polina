@@ -1,0 +1,40 @@
+.link {
+  padding: 0.625px 0.9375px;
+  color: $text-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $selection-color;
+  }
+}
+
+.link-nav {
+  transition: color 1s;
+  &:hover {
+    color: $highlights-color;
+  }
+}
+
+.link-active {
+  border-bottom: 1rem solid $highlights-color;
+}
+
+.link-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding: 10rem;
+  justify-content: center;
+  align-content: center;
+  border: 1rem solid $highlights-color;
+  border-radius: 10rem;
+  color: $highlights-color;
+  font-size: 20rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $selection-color;
+  }
+}

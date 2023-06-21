@@ -1,0 +1,100 @@
+.aboutMe {
+  display: grid;
+  grid-row-gap: 15rem;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10rem;
+  padding: 10rem 18rem;
+  background: rgba(196, 196, 196, 0.3);
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  font-family: Montserrat;
+
+  img {
+    width: 110rem;
+    height: 110rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+
+    &-surname {
+      font-weight: 400;
+      font-size: 35rem;
+      color: $second-color;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 40rem;
+    }
+
+    &-speciality {
+      font-weight: 700;
+      font-size: 20rem;
+      color: $second-color;
+
+      @media (max-width: 480px) {
+        font-size: 18rem;
+      }
+    }
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 6rem;
+  margin: 0 auto;
+  width: 100%;
+  @extend %calibri-about;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7rem 20rem 7rem 30rem;
+    height: 38rem;
+    font-size: 20rem;
+    @extend %about_back;
+
+    @media (max-width: 480px) {
+      font-size: 18rem;
+    }
+  }
+
+  img {
+    margin-right: 40rem;
+    height: 100%;
+    object-fit: contain;
+    scale: (1.5);
+  }
+}
+
+.edition {
+  margin: 0 auto;
+  padding: 7rem 30rem 7rem 30rem;
+  width: 100%;
+  @extend %calibri-about;
+  @extend %about_back;
+  font-size: 20rem;
+}
+
+// .hobby{
+//   width: 400rem;
+//   margin: 0 auto;
+//   padding: 7rem 30rem 7rem 30rem;
+//   @extend %calibri-style;
+//   @extend %about_back;
+// }

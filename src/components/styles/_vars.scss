@@ -1,0 +1,22 @@
+$text-color: #fff;
+$second-color: #cecaca;
+$selection-color: #545454;
+$highlights-color: #0280a7;
+
+%about_back {
+  border-radius: 10rem;
+  background: rgba(196, 196, 196, 0.35);
+}
+
+%calibri-about {
+  font-family: Calibri;
+  font-style: normal;
+  font-size: 20rem;
+  font-weight: 400;
+}
+
+%calibri-skills {
+  font-family: Calibri;
+  font-style: normal;
+  color: #343434;
+}
