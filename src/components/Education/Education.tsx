@@ -15,8 +15,8 @@ export const Education = () => {
         <li className="education__item">
           <p className="education__year">2019 - 2021</p>
           <p className="education__grade">Магистратура</p>
-          <h6 className="education__title">Физико-астрономичсекое образование</h6>
-          <p className="education__subtitle">РГПУ им.А.И. Герцена</p>
+          <h6 className="education__title">Физико-астрономическое образование</h6>
+          <p className="education__subtitle">РГПУ им. А.И. Герцена</p>
         </li>
         <li className="education__item">
           <p className="education__year">2015-2019</p>
