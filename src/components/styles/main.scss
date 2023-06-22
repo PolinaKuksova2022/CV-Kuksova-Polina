@@ -1,5 +1,6 @@
 @import "resets";
-@import "vars";
+@import "./abstracts/vars";
+@import "./abstracts/mixins";
 @import "link";
 @import "fonts";
 @import "./buttons";

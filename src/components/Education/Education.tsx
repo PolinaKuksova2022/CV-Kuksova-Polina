@@ -8,7 +8,7 @@ export const Education = () => {
       <ul className="education__items">
         <li className="education__item">
           <p className="education__year">2023 - ...</p>
-          <p className="education__grade">В процессе</p>
+          <p className="education__grade">Курсы</p>
           <h6 className="education__title">Мидл фронтенд-разработчик</h6>
           <p className="education__subtitle">Яндекс Практикум</p>
         </li>

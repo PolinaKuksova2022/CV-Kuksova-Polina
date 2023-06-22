@@ -1,0 +1,17 @@
+$text-color: #fff;
+$second-color: #cecaca;
+$selection-color: #1d262d;
+$highlights-color: #0280a7;
+// #dea426
+
+%underscore {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background: $second-color;
+  }
+}

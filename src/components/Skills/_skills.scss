@@ -5,8 +5,7 @@
   border-radius: 30rem;
   background: linear-gradient(90deg, $second-color 0%, $highlights-color 100%);
   color: $selection-color;
-  font-weight: 600;
-  font-size: 23rem;
+  @include font-face(23rem, 23rem, 600);
 
   &__items {
     display: grid;
@@ -29,18 +28,9 @@
   }
 }
 
-
-// .addition {
-//   font-weight: 400;
-//   font-size: 16rem;
-//   line-height: 16rem;
-//   color: #73808d;
-//   @extend %calibri-skills;
-// }
-
 @media (max-width: 480px) {
   .skills {
-    font-size: 18rem;
+    @include font-face(18rem, 18rem, 600);
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }

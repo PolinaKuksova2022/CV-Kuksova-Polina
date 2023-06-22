@@ -54,8 +54,8 @@
     margin-top: 50rem;
 
     &-name {
-      font-weight: 500;
-      font-size: 40rem;
+      @include font-face(40rem, 42rem, 500);
+
       span {
         color: $highlights-color;
       }
@@ -68,8 +68,7 @@
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
-      font-weight: 600;
-      font-size: 60rem;
+      @include font-face(60rem, 60rem, 600);
       color: $text-color;
     }
   }
@@ -100,9 +99,7 @@
         height: 0;
         top: 50%;
         left: 50%;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
+        @include transition(all 0.5s);
       }
 
       &:hover::after {
@@ -153,14 +150,13 @@
   * li {
     position: relative;
     margin-bottom: 8rem;
-    font-size: 24rem;
+    @include font-face(24rem, 24rem);
     list-style-type: none;
 
     &::after,
     &::before {
       position: absolute;
-      font-size: 26rem;
-      font-weight: bold;
+      @include font-face(26rem, 26rem, bold);
       color: $highlights-color;
     }
 
@@ -199,13 +195,11 @@
       margin-top: 50rem;
 
       &-name {
-        font-weight: 500;
-        font-size: 30rem;
+        @include font-face(30rem, 30rem, 500);
       }
 
       &-speciality {
-        font-weight: 600;
-        font-size: 35rem;
+        @include font-face(35rem, 35rem, 600);
       }
     }
 
@@ -227,8 +221,7 @@
       &::after,
       &::before {
         position: absolute;
-        font-size: 20rem;
-        font-weight: bold;
+        @include font-face(20rem, 20rem, bold);
         color: $highlights-color;
       }
     }

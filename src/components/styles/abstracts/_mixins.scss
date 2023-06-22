@@ -1,0 +1,11 @@
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+@mixin font-face($size, $height, $weight: 400) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

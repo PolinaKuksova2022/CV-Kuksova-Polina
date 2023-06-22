@@ -40,25 +40,19 @@
 
   &__stack {
     position: relative;
-    font-size: 30rem;
-    line-height: 35rem;
-    font-weight: 600;
+    @include font-face(30rem, 34rem, 600);
     color: $highlights-color;
     text-shadow: 2rem 2rem 1rem $selection-color;
   }
 
   &__title {
     margin: 40rem 0;
-    font-size: 44rem;
-    line-height: 45rem;
-    font-weight: 900;
+    @include font-face(44rem, 46rem, 900);
     color: $selection-color;
   }
 
   &__description {
-    font-size: 22rem;
-    line-height: 35rem;
-    font-weight: 400;
+    @include font-face(22rem, 34rem);
     text-align: justify;
   }
 }
@@ -71,19 +65,16 @@
     }
 
     &__stack {
-      font-size: 28rem;
-      line-height: 30rem;
+      @include font-face(28rem, 30rem, 600);
     }
 
     &__title {
       margin: 15rem 0;
-      font-size: 30rem;
-      line-height: 34rem;
+      @include font-face(30rem, 34rem, 900);
     }
 
     &__description {
-      font-size: 20rem;
-      line-height: 22rem;
+      @include font-face(20rem, 22rem);
     }
   }
 }

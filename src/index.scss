@@ -24,6 +24,18 @@ body {
   background:  #1D262D;
 }
 
+html,
+body {
+  &::-webkit-scrollbar{
+    width: 15rem;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #cecaca;
+    border: none;
+    border-radius:  8rem;
+  }
+}
+
 #root {
   display: flex;
   flex-direction: column;
