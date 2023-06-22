@@ -28,7 +28,7 @@ export const projects: TProject[] = [
   },
   {
     path: "https://cheery-paletas-21c232.netlify.app/",
-    repo: "https://github.com/PolinaKuksova2022/CV-Kuksova-Polina/upload/gh-pages",
+    repo: "https://github.com/PolinaKuksova2022/Songbird.quiz",
     img: "./static/songbird.JPG",
     title: "Songbird",
     description:
