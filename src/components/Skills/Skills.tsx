@@ -4,9 +4,9 @@ import { skills } from "../data/skills";
 
 export const Skills = () => {
   return (
-    <article className="skills" id="skills">
-      <section>
-        <h3 className="paragraph">Ключевые навыки</h3>
+    <article id="skills">
+      <h3 className="paragraph">Технические навыки</h3>
+      <section className="skills">
         <section className="skills__items">
           {skills.map((i) => (
             <article className="skills__item" key={i.name}>
