@@ -18,8 +18,8 @@ export const projects: TProject[] = [
     stack: "React, TypeScript, Scss",
   },
   {
-    path: "https://shkredovdmitriy.github.io/online-store/",
-    repo: "https://github.com/PolinaKuksova2022/PolinaKuksova2022.github.io/tree/develop",
+    path: "https://store-pk.netlify.app/",
+    repo: "https://github.com/PolinaKuksova2022/Online-Store/tree/main",
     img: "./static/store.JPG",
     title: "Online-Store",
     description:
