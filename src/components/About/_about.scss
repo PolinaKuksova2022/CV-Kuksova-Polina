@@ -150,7 +150,8 @@
   * li {
     position: relative;
     margin-bottom: 8rem;
-    @include font-face(24rem, 24rem);
+    @include font-face(24rem, 26rem);
+    letter-spacing: 1.3rem;
     list-style-type: none;
 
     &::after,
