@@ -1,2 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 // @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+%about {
+  font-style: normal;
+  font-size: 20rem;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 1rem;
+}
+
+%calibri-skills {
+  font-family: Calibri;
+  font-style: normal;
+  color: #343434;
+}
+
+.paragraph {
+  margin-top: 12rem;
+  margin-bottom: 90rem;
+  font-weight: 600;
+  font-size: 32rem;
+  letter-spacing: 2rem;
+  color: $highlights-color;
+}

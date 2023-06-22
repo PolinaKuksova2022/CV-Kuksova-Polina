@@ -1,0 +1,43 @@
+.experience {
+  margin-bottom: 70rem;
+
+  &__items {
+    margin-left: 35rem;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr;
+    column-gap: 30rem;
+    margin-bottom: 60rem;
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    font-size: 22rem;
+    @extend %underscore;
+  }
+
+  &__post {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    margin-bottom: 0;
+
+    &__item {
+      grid-template-columns: 1fr;
+      row-gap: 20rem;
+      padding-bottom: 40rem;
+      height: fit-content;
+      font-size: 18rem;
+    }
+
+    &__post {
+      text-align: left;
+    }
+  }
+}

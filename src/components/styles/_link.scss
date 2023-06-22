@@ -3,38 +3,52 @@
   color: $text-color;
   text-decoration: none;
   cursor: pointer;
-
-  &:hover {
-    color: $selection-color;
-  }
 }
 
 .link-nav {
-  transition: color 1s;
-  &:hover {
-    color: $highlights-color;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -10rem;
+    width: 0;
+    height: 4rem;
+    background: $highlights-color;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+    background: $highlights-color;
+    -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover::before {
+    width: 100%;
+    background: $highlights-color;
+    -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -moz-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -o-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: -1;
+  }
+
+  &:hover::after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+    z-index: -1;
   }
 }
 
 .link-active {
   border-bottom: 1rem solid $highlights-color;
-}
-
-.link-btn {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  padding: 10rem;
-  justify-content: center;
-  align-content: center;
-  border: 1rem solid $highlights-color;
-  border-radius: 10rem;
-  color: $highlights-color;
-  font-size: 20rem;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: $selection-color;
-  }
 }

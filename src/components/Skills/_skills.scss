@@ -1,5 +1,5 @@
 .skills {
-  margin-bottom: 70rem;
+  margin: 70rem 0;
   padding: 65rem 35rem;
   height: fit-content;
   border-radius: 30rem;
@@ -30,28 +30,13 @@
 }
 
 
-.title {
-  margin-top: 12rem;
-  font-weight: 700;
-  font-size: 20rem;
-  line-height: 20rem;
-  @extend %calibri-skills;
-}
-
-.subtitle {
-  font-weight: 400;
-  font-size: 18rem;
-  line-height: 18rem;
-  @extend %calibri-skills;
-}
-
-.addition {
-  font-weight: 400;
-  font-size: 16rem;
-  line-height: 16rem;
-  color: #73808d;
-  @extend %calibri-skills;
-}
+// .addition {
+//   font-weight: 400;
+//   font-size: 16rem;
+//   line-height: 16rem;
+//   color: #73808d;
+//   @extend %calibri-skills;
+// }
 
 @media (max-width: 480px) {
   .skills {

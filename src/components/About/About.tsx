@@ -7,7 +7,7 @@ import { soft } from "../data/soft.";
 
 export const About = () => {
   return (
-    <article className="aboutMe">
+    <article className="about" id="about">
       <section className="profile">
         <div className="profile__img">
           <img src={profile} alt="photo" />
