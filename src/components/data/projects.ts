@@ -27,7 +27,7 @@ export const projects: TProject[] = [
     stack: "React, Redux, TypeScript, Scss, RRD",
   },
   {
-    path: "https://cheery-paletas-21c232.netlify.app/",
+    path: "https://songbird-pk.netlify.app/",
     repo: "https://github.com/PolinaKuksova2022/Songbird.quiz",
     img: "./static/songbird.JPG",
     title: "Songbird",
