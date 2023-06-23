@@ -4,7 +4,7 @@ import "../Styles/main.scss";
 export const Education = () => {
   return (
     <article className="education" id="education">
-      <h3 className="paragraph">Образование и курсы</h3>
+      <h3 className="title">Образование и курсы</h3>
       <ul className="education__items">
         <li className="education__item">
           <p className="education__year">2023 - ...</p>

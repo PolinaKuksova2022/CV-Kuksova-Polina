@@ -20,13 +20,13 @@ export const About = () => {
             Front-end разработчик
           </h1>
         </section>
-        <section className="profile__contact">
+        <div className="profile__contact">
           {contact.map((i) => (
             <a className="link" href={i.path} key={i.path}>
               <img src={i.img} alt={i.contact} />
             </a>
           ))}
-        </section>
+        </div>
       </section>
       {/* <nav className="edition">
         Языки
@@ -35,15 +35,11 @@ export const About = () => {
           <li>English: B1-B2</li>
         </ul>
       </nav> */}
-      <nav className="edition">
-        <ul>
-          {soft.map((i) => (
-            <li key={i.id}>
-              {i.description}
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <ul className="edition">
+        {soft.map((i) => (
+          <li className="edition__item" key={i.id}>{i.description}</li>
+        ))}
+      </ul>
     </article>
   );
 };

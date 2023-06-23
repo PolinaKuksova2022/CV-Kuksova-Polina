@@ -1,18 +1,16 @@
 .skills {
-  margin: 70rem 0;
-  padding: 65rem 35rem;
-  height: fit-content;
-  border-radius: 30rem;
-  background: linear-gradient(90deg, $second-color 0%, $highlights-color 100%);
-  color: $selection-color;
-  @include font-face(23rem, 23rem, 600);
-
+  margin-bottom: 120rem;
   &__items {
+    padding: 70rem 40rem !important;
+    height: fit-content;
+    border-radius: 30rem;
+    background: linear-gradient(90deg, $second-color 0%, $highlights-color 100%);
+    color: $selection-color;
+    @include font-face(23rem, 23rem, 600);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20rem;
     grid-row-gap: 40rem;
-    margin-top: 12rem;
   }
 
   &__item {
@@ -30,8 +28,8 @@
 
 @media (max-width: 480px) {
   .skills {
-    @include font-face(18rem, 18rem, 600);
     &__items {
+      @include font-face(18rem, 18rem, 600);
       grid-template-columns: repeat(2, 1fr);
     }
 

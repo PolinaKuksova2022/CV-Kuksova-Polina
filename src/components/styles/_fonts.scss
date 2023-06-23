@@ -9,17 +9,9 @@
   letter-spacing: 1rem;
 }
 
-%calibri-skills {
-  font-family: Calibri;
-  font-style: normal;
-  color: #343434;
-}
-
-.paragraph {
-  margin-top: 12rem;
-  margin-bottom: 60rem;
-  font-weight: 600;
-  font-size: 32rem;
+.title {
+  margin-bottom: 80rem;
+  @include font-face(32rem, 32rem, 600);
   letter-spacing: 2rem;
   color: $highlights-color;
 }

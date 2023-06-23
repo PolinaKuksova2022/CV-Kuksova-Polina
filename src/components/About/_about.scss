@@ -1,5 +1,5 @@
 .about {
-  margin: 70rem 0;
+  margin: 70rem 0 120rem 0;
   width: 100%;
   height: fit-content;
 }
@@ -137,17 +137,12 @@
 }
 
 .edition {
-  margin: 0;
-  width: 100%;
   @extend %about;
+  margin-left: 18rem;
+  padding: 0;
+  text-align: justify;
 
-  > ul {
-    margin-left: 18rem;
-    padding: 0;
-    text-align: justify;
-  }
-
-  * li {
+  &__item {
     position: relative;
     margin-bottom: 8rem;
     @include font-face(24rem, 26rem);
@@ -217,7 +212,7 @@
   }
 
   .edition {
-    *li {
+    &__item {
       font-size: 18rem;
       &::after,
       &::before {

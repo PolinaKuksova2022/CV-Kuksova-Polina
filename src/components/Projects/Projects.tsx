@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 export const Projects = () => {
   return (
     <article className="project" id="project">
-      <h3 className="paragraph">Проекты</h3>
+      <h3 className="title">Проекты</h3>
       <ul className="project__items">
         {projects.map((i) => (
           <li className="project__item" key={i.path}>

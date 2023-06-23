@@ -9,15 +9,6 @@ export interface TProject {
 
 export const projects: TProject[] = [
   {
-    path: "https://calculator-constructorpk.netlify.app/",
-    repo: "https://github.com/PolinaKuksova2022/Calculator-Constructor/tree/develop",
-    img: "./static/calculator.JPG",
-    title: "Drag-and-drop конструктор калькулятора",
-    description:
-      "Онлайн калькулятор с двумя режимами работы runtime и constructor. В режиме runtime можно перемещать элементы из панели на холст. В режиме constructor калькулятор производит вычисления.",
-    stack: "React, TypeScript, Scss",
-  },
-  {
     path: "https://store-pk.netlify.app/",
     repo: "https://github.com/PolinaKuksova2022/Online-Store/tree/main",
     img: "./static/store.JPG",
@@ -25,6 +16,15 @@ export const projects: TProject[] = [
     description:
       "Многостраничный сайт, на основной странице размещены карточки товаров и блоки с фильтрами по категориям и брендам/названиям. На странице корзины товаров пользователь может просмотреть информацию о добавленных товарах, изменить количество товаров, воспользоваться пагинацией и ввести промокод. Для хранения данных используется localStorage. Проект был выполнен командой из двух человек.",
     stack: "React, Redux, TypeScript, Scss, RRD",
+  },
+  {
+    path: "https://calculator-constructorpk.netlify.app/",
+    repo: "https://github.com/PolinaKuksova2022/Calculator-Constructor/tree/develop",
+    img: "./static/calculator.JPG",
+    title: "Drag-and-drop конструктор калькулятора",
+    description:
+      "Онлайн калькулятор с двумя режимами работы runtime и constructor. В режиме runtime можно перемещать элементы из панели на холст. В режиме constructor калькулятор производит вычисления.",
+    stack: "React, TypeScript, Scss",
   },
   {
     path: "https://songbird-pk.netlify.app/",

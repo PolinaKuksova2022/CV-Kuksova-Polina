@@ -4,7 +4,7 @@ import "../Styles/main.scss";
 export const Experience = () => {
   return (
     <article className="experience" id="experience">
-      <h3 className="paragraph">Опыт работы</h3>
+      <h3 className="title">Опыт работы</h3>
       <ul className="experience__items">
         <li className="experience__item">
           <p>2022</p>

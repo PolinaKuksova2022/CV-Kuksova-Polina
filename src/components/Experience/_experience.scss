@@ -1,5 +1,5 @@
 .experience {
-  margin-bottom: 70rem;
+  margin-bottom: 120rem;
 
   &__items {
     margin-left: 35rem;
@@ -15,6 +15,10 @@
     height: 80rem;
     @include font-face(22rem, 22rem);
     @extend %underscore;
+    
+    &:last-child{
+      margin-bottom: 0;
+    }
   } 
 
   &__post {
