@@ -11,7 +11,10 @@
 
 .title {
   margin-bottom: 80rem;
-  @include font-face(32rem, 32rem, 600);
+
+  @include font-face(42rem, 42rem, 700);
+
+  text-align: center;
   letter-spacing: 2rem;
-  color: $highlights-color;
+  color: $text-color;
 }

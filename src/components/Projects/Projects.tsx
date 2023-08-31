@@ -11,9 +11,9 @@ export const Projects = () => {
           <li className="project__item" key={i.path}>
             <img className="project__img" src={i.img} alt={i.title} />
             <section className="project__content">
-              <p className="project__stack">{i.stack}</p>
+              <h6 className="project__stack">{i.stack}</h6>
               <h5 className="project__title">{i.title}</h5>
-              <p className="project__description">{i.description}</p>
+              <h6 className="project__description">{i.description}</h6>
               <a href={i.path} className="project__btn-path">
                 <button className="btn">Cайт</button>
               </a>

@@ -64,13 +64,12 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  width: 80rem;
-  height: 60rem;
+  width: 90rem;
+  height: 90rem;
   right: 20rem;
-  bottom: 0;
+  bottom: 40rem;
   border: none;
-  border-top-left-radius: 10rem;
-  border-top-right-radius: 10rem;
+  border-radius: 50%;
   background: $highlights-color;
   cursor: pointer;
 
@@ -90,6 +89,7 @@
     margin-right: 10rem;
     padding: 18rem 18rem;
     width: 170rem;
+
     @include font-face(16rem, 16rem);
   }
 }
